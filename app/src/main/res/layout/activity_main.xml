@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/rock"
+            android:id="@+id/imageYou"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A te választásod"
+            android:id="@+id/textYou"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/rock"
+            android:id="@+id/imageComputer"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A gép választása"
+            android:id="@+id/textComputer"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eredmény: "
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/textResult"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ember: "
+        android:layout_toEndOf="@+id/textResult"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textResultYou"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 "
+        android:layout_toEndOf="@+id/textResultYou"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textResultYouNumber"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Computer: "
+        android:layout_toEndOf="@+id/textResultYouNumber"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textResultComputer"/>
+
+    <TextView
+        android:id="@+id/textResultComputerNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/textResultComputer"
+        android:text="0 " />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KŐ"
+        android:layout_below="@+id/textResult"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/buttonRock"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAPÍR"
+        android:layout_below="@+id/textResult"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/buttonRock"
+        android:id="@+id/buttonPaper"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OLLÓ"
+        android:layout_below="@+id/textResult"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/buttonPaper"
+        android:id="@+id/buttonScissors"/>
+
+
+
+</RelativeLayout>
